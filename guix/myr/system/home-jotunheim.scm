@@ -19,7 +19,7 @@
 		     guile guile-xyz emacs emacs-xyz audio video rust-apps
 		     gnome gnome-xyz kde-frameworks freedesktop
 		     curl wget ssh glib librewolf xdisorg
-             wm)
+             wm shells)
 
 (define %font-packages
   (list font-hermit        ;;|--> gnu packages fonts

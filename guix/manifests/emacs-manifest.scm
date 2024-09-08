@@ -8,7 +8,6 @@
    "emacs-multiple-cursors" 
    "emacs-doom-modeline"
    "emacs-doom-themes"
-   "emacs-centered-cursors"
    "emacs-expand-region"
    "emacs-ws-butler"
    ;; -- Core :icons
@@ -87,7 +86,7 @@
    "emacs-eglot"
    "emacs-apheleia"
    "emacs-lispy"
-   "emacs lispyville" 
+   "emacs-lispyville" 
    "emacs-projectile"
    ;; -- Mail.el
    "emacs-mu4e-alert"
