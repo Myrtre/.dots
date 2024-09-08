@@ -1,3 +1,6 @@
 [submodule ".emacs.d"]
 	path = .emacs.d
 	url = https://github.com/Myrtre/.emacs.d
+[submodule ".stumpwm.d"]
+	path = .stumpwm.d
+	url = https://github.com/Myrtre/.stumpwm.d
