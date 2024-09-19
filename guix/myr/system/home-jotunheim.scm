@@ -17,7 +17,7 @@
 		     gstreamer compton image-viewers linux music kde
 		     gimp inkscape graphics compression version-control
 		     guile guile-xyz emacs emacs-xyz audio video rust-apps
-		     gnome gnome-xyz kde-frameworks freedesktop
+		     gnome gnome-xyz kde-frameworks freedesktop package-management
 		     curl wget ssh glib librewolf xdisorg
              wm shells)
 
@@ -73,7 +73,9 @@
   (list xdg-desktop-portal
 	xdg-utils
 	xdg-dbus-proxy
-	shared-mime-info))
+	shared-mime-info
+    flatpak               ;;|--> gnu packages package-management
+    flatpak-xdg-utils))   ;;|--> gnu packages freedesktop
 
 (home-environment
  (packages (append (gather-manifest-packages '(mail-manifest
@@ -96,6 +98,8 @@
 	    (simple-service 'env-vars home-environment-variables-service-type
 			            '(("EDITOR" . "emacsclient -c -a 'emacs'")
 			              ("BROWSER" . "nyxt")
+                          ("PATH" . "$HOME/.bin:$HOME/.npm-global/bin:$PATH")
+                          ("XDG_DATA_DIRS" . "$XDG_DATA_DIRS:$HOME/.local/share/flatpak/exports/share")
 			              ("XDG_SESSION_TYPE" . "x11")
 			              ("XDG_SESSION_DESKTOP" . "stumpwm")
 			              ("XDG_CURRENT_DESKTOP" . "stumpwm")

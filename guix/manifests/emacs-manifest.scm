@@ -1,5 +1,6 @@
 (specifications->manifest
  '("emacs-next"           ;;--> Emacs Package
+   "emacs-straight-el"
    ;; -- Core
    "emacs-no-littering"
    "emacs-tmr"
@@ -7,7 +8,6 @@
    "emacs-helpful"
    "emacs-multiple-cursors" 
    "emacs-doom-modeline"
-   "emacs-doom-themes"
    "emacs-expand-region"
    "emacs-ws-butler"
    ;; -- Core :icons
@@ -55,6 +55,9 @@
    "emacs-consult-projectile"
    "emacs-undo-tree"
    "emacs-wgrep"
+   ;;; Theme
+   "emacs-doom-themes"
+   "emacs-xterm-color"
    ;; -- Dashboard.el
    "emacs-dashboard"
    ;; -- Org.el
@@ -88,6 +91,25 @@
    "emacs-lispy"
    "emacs-lispyville" 
    "emacs-projectile"
+   ;; ----- LSP ----- ;;
+   ;; ## Web ##
+   "emacs-web-mode"
+   "emacs-typescript-mode"
+   "emacs-js2-mode"
+   "emacs-markdown-mode"
+   "emacs-markdown-preview-mode"
+   "emacs-skewer-mode"
+   "emacs-yaml-mode"
+   ;; ## Lisp ##
+   "emacs-sly"
+   "emacs-sly-asdf"
+   "emacs-sly-quicklisp"
+   "emacs-macrostep"
+   ;; ## Lua ##
+   "emacs-fennel-mode"
+   "emacs-lua-mode"
+   ;; ## Misc ##
+   "emacs-nix-mode"
    ;; -- Mail.el
    "emacs-mu4e-alert"
    ;; -- Torrent.el
