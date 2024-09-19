@@ -1,0 +1,3 @@
+https://channels.nixos.org/nixos-24.05 nixpkgs
+https://nixos.org/channels/nixos-unstable nixpkgs-unstable
+https://github.com/nix-community/home-manager/archive/release-24.05.tar.gz home-manager
