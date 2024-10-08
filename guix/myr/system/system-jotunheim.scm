@@ -14,7 +14,7 @@
 		     cups suckless networking curl emacs vim
 		     version-control nfs file-systems compression
 		     package-management libusb display-managers
-             shells)
+             shells tls music)
 
 (use-service-modules cups ssh desktop xorg nix
 		     networking sddm pm)
@@ -81,20 +81,9 @@
 	sbcl-bordeaux-threads
 	sbcl-cl-fad
 	sbcl-clx-truetype
+    sbcl-cl+ssl
 	sbcl-alexandria
-	stumpwm+slynk          ;;|--> gnu packages wm
-	sbcl-stumpwm-ttf-fonts ;;:stumpwm-contrib/utils
-	sbcl-stumpwm-kbd-layouts
-	sbcl-stumpwm-swm-gaps
-	sbcl-stumpwm-globalwindows
-	sbcl-stumpwm-cpu
-	sbcl-stumpwm-mem
-	sbcl-stumpwm-notify
-	sbcl-stumpwm-hostname
-	sbcl-stumpwm-stumptray
-	sbcl-stumpwm-net
-	sbcl-stumpwm-wifi
-	sbcl-stumpwm-battery-portable))
+	stumpwm+slynk))          ;;|--> gnu packages wm
 
 (define %font-packages
   (list font-hermit        ;;|--> gnu packages fonts
@@ -139,8 +128,10 @@
 	btrfs-progs
 	ntfs-3g
 	brightnessctl
+    playerctl          ;;|--> gnu packages music
     i3lock             ;;|--> gnu packages wm
     i3lock-fancy
+    openssl            ;;|--> gnu packages tls
     fish               ;;|--> gnu packages shells
 	stow               ;;|--> gnu packages stow
 	emacs              ;;|--> gnu packages emacs

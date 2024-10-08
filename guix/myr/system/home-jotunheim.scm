@@ -62,6 +62,7 @@
 	pinentry
 	pinentry-tty
     fish            ;;|--> gnu packages wm
+    polybar
     rxvt-unicode))  ;;|--> gnu packages xdisorg
 
 (define %appearance-packages
@@ -79,7 +80,9 @@
 
 (home-environment
  (packages (append (gather-manifest-packages '(mail-manifest
-                                               app-manifest))
+                                               app-manifest
+                                               ;; move gaming-manifest to Flatpak...
+                                               ))
 		  (append %media-packages
 			  %general-packages
 			  %appearance-packages
