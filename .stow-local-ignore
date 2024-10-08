@@ -6,6 +6,7 @@
 \.archive
 guix
 nix-conf
+\.gaming
 ^/.*\.org
 ^/.*\.swp
 
